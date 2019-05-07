@@ -12,8 +12,7 @@ describe('APIAdapter', () => {
         headers: { 'Content-Type': 'application/json; charset=utf-8' }
       });
       adapter.is(Object);
-      const identifier = 'id';
-      const emporium = new Emporium(adapter, { identifier });
+      const emporium = new Emporium(adapter);
       emporium.adapter.is(adapter);
       emporium.identifier.is('id');
 
