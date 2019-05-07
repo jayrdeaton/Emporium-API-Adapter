@@ -1,0 +1,24 @@
+{
+  "name": "emporium-api-adapter",
+  "version": "0.0.0",
+  "description": "An API adapter for Emporium",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayrdeaton/Emporium-API-Adapter.git"
+  },
+  "keywords": [
+    "Emporium",
+    "API",
+    "Adapter"
+  ],
+  "author": "Jay Deaton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jayrdeaton/Emporium-API-Adapter/issues"
+  },
+  "homepage": "https://github.com/jayrdeaton/Emporium-API-Adapter#readme"
+}
