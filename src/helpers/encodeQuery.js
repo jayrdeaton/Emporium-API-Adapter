@@ -3,7 +3,7 @@ module.exports = (adapter, query) => {
   for (const key of Object.keys(query)) {
     if (typeof query[key] === 'object') {
       if (adapter.encodingMethod) {
-        result[key] = adapter.encodingMethod(query[key])
+        result[key] = adapter.encodingMethod(query[key], key)
       } else {
         result[key] = JSON.stringify(query[key])
       }
