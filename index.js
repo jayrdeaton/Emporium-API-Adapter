@@ -1,3 +1,3 @@
-const { APIAdapter } = require('./src/adapters');
+const { APIAdapter } = require('./src/adapters')
 
-module.exports = APIAdapter;
+module.exports = APIAdapter

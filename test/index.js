@@ -1,3 +1,3 @@
-require('./_setup');
-require('./adapters');
-require('./z_teardown');
+require('./_setup')
+require('./adapters')
+require('./z_teardown')

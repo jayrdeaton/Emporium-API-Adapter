@@ -1,3 +1,3 @@
-let APIAdapter = require('./APIAdapter');
+let APIAdapter = require('./APIAdapter')
 
-module.exports = { APIAdapter };
+module.exports = { APIAdapter }

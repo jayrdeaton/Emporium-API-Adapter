@@ -1,3 +1,3 @@
 describe('adapters', () => {
-  require('./APIAdapter');
-});
+  require('./APIAdapter')
+})
