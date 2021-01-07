@@ -1,6 +1,6 @@
 {
   "name": "@emporium/api-adapter",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "An API adapter for Emporium",
   "main": "index.js",
   "scripts": {
