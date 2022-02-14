@@ -1,6 +1,6 @@
 const { is, isnt } = require('amprisand'),
   Emporium = require('@emporium/core'),
-  faker = require('faker'),
+  faker = require('@faker-js/faker'),
   APIAdapter = require('../../')
 let Storable, storables = []
 
