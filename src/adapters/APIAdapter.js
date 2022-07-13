@@ -22,6 +22,7 @@ module.exports = class APIAdapter {
       headers: this.headers,
       data
     }
+    if (schema.controller) request.signal = schema.controller.signal
     if (query) request.params = encodeQuery(this, query)
     if (process.env.NODE_ENV === 'EMPORIUM_TEST') throw request
     let response = await axios(request)
@@ -41,6 +42,7 @@ module.exports = class APIAdapter {
       method: 'DELETE',
       headers: this.headers
     }
+    if (schema.controller) request.signal = schema.controller.signal
     if (process.env.NODE_ENV === 'EMPORIUM_TEST') throw request
     let response = await axios(request)
     return response.data
@@ -53,6 +55,7 @@ module.exports = class APIAdapter {
       method: 'GET',
       headers: this.headers
     }
+    if (schema.controller) request.signal = schema.controller.signal
     if (query) request.params = encodeQuery(this, query)
     if (process.env.NODE_ENV === 'EMPORIUM_TEST') throw request
     let response = await axios(request)
@@ -65,6 +68,7 @@ module.exports = class APIAdapter {
       method: 'GET',
       headers: this.headers
     }
+    if (schema.controller) request.signal = schema.controller.signal
     if (query) request.params = encodeQuery(this, query)
     if (process.env.NODE_ENV === 'EMPORIUM_TEST') throw request
     let response = await axios(request)
@@ -81,6 +85,7 @@ module.exports = class APIAdapter {
       headers: this.headers,
       data
     }
+    if (schema.controller) request.signal = schema.controller.signal
     if (query) request.params = encodeQuery(this, query)
     if (process.env.NODE_ENV === 'EMPORIUM_TEST') throw request
     let response = await axios(request)
