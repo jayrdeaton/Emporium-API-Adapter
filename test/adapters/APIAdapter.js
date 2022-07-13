@@ -1,6 +1,6 @@
 const { is, isnt } = require('amprisand'),
   Emporium = require('@emporium/core'),
-  faker = require('@faker-js/faker'),
+  { faker } = require('@faker-js/faker'),
   APIAdapter = require('../../')
 let Storable, storables = []
 
@@ -17,7 +17,7 @@ describe('APIAdapter', () => {
       emporium.identifier.is('id')
 
       Storable = emporium.define('Test_Model', {
-        id: {type: String, default: faker.random.uuid},
+        id: {type: String, default: faker.datatype.uuid},
         key: String
       }, {
         resourceName: 'test_models'
@@ -286,7 +286,7 @@ describe('APIAdapter', () => {
   describe('storable.save()', () => {
     it('should update a storable', async () => {
       const object = storables[0]
-      object.number = faker.random.number()
+      object.number = faker.datatype.number()
       let request
       try {
         await object.save()
